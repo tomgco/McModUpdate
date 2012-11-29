@@ -1,4 +1,5 @@
 <?php
+date_default_timezone_set('UTC');
 
 $modlist = "mod-list.json";
 $isUrl = false;
@@ -26,6 +27,17 @@ if ($isUrl) {
 $json = json_decode($data);
 if ($json === null) throw new Exception("Failed to parse JSON: error ". json_last_error());
 
+/****** do jar ******/
+
+/****** do mods ******/
+//backup mods folder
+$home = exec('echo $HOME');
+backup("$home/Library/Application Support/minecraft/mods/");
+
+foreach($json->common->mods as $mod) {
+
+}
+
 function getOS() {
   $sys = strtoupper(PHP_OS);
   $os = 0;
@@ -42,4 +54,24 @@ function getOS() {
       $os = 3;
   }
   return $os;
+}
+
+function backup($folder) {
+  $name = basename($folder);
+  $zipfile = realpath("$folder../"). "/$name-". date('d-M-Y_H-i-s') .".zip";
+  echo "backing up $folder to $zipfile\n";
+  $zip = new ZipArchive();
+  $zip->open($zipfile, ZIPARCHIVE::CREATE) or die("Error creating zip archive.");
+
+  $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($folder), RecursiveIteratorIterator::CHILD_FIRST);
+  foreach ($iterator as $path) {
+    if (!$path->isDir()) {
+      $filepath = $path->__toString();
+      $name = substr($filepath, strlen($folder));
+      $zip->addFile($filepath, $name);
+      echo "adding $name\n";
+    }
+  }
+  $zip->close() or die("Error closing zip archive.");
+  echo "backup of $folder is complete\n";
 }
