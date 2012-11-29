@@ -25,3 +25,21 @@ if ($isUrl) {
 
 $json = json_decode($data);
 if ($json === null) throw new Exception("Failed to parse JSON: error ". json_last_error());
+
+function getOS() {
+  $sys = strtoupper(PHP_OS);
+  $os = 0;
+  if(substr($sys,0,3) == "WIN")
+  {
+      $os = 1;
+  }
+  else if($sys == "LINUX")
+  {
+      $os = 2;
+  }
+  else if ($sys == "DARWIN")
+  {
+      $os = 3;
+  }
+  return $os;
+}
