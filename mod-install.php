@@ -24,4 +24,4 @@ if ($isUrl) {
 }
 
 $json = json_decode($data);
-var_dump($json);
+if ($json === null) throw new Exception("Failed to parse JSON: error ". json_last_error());
