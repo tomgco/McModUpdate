@@ -1,0 +1,65 @@
+{ "version": "1.4.5"
+, "common":
+  { "mods":
+    [ { "name": "BuildCraft"
+      , "version": "3.2.0"
+      , "url": "http://bit.ly/Q8KM9d"
+      }
+    , { "name": "Forestry"
+      , "version": "1.6.2.0"
+      , "url": "http://bit.ly/QuVTL1"
+      }
+    , { "name": "ComputerCraft"
+      , "version": "1.4.7"
+      , "url": "https://adf.ly/go/a6025777354003370a06add8b981f23f/aHR0cDovL3d3dy5tZWRpYWZpcmUuY29tLz9lODFvZWE5NjRzaml3YWI"
+      }
+    , { "name": "RailCraft"
+      , "version": "6.8.0.0"
+      , "url": "http://adf.ly/go/bd9634e03e744094ad247151e9557eec/aHR0cHM6Ly9kbC5kcm9wYm94LmNvbS91LzM4NTU4OTU3L01pbmVjcmFmdC9SYWlsY3JhZnRfNi44LjAuMC56aXA"
+      }
+    , { "name": "EE3"
+      , "version": "3-pre2"
+      , "url": "https://dl.dropbox.com/u/315348/ee3-universal-pre2.jar"
+      }
+    , { "name": "Iron Chests"
+      , "version": "4.4"
+      , "url": "http://files.minecraftforge.net/IronChests2/ironchest-universal-recommended.zip"
+      }
+    , { "name": "EnderStorage"
+      , "version": "1.2.1.6"
+      , "url": "http://www.chickenbones.craftsaddle.org/Files/goto.php?file=EnderStorage"
+      }
+    , { "name": "IC2"
+      , "version": "2_1.109.113"
+      , "url": "http://dl.dropbox.com/u/861751/IC2/1.109/industrialcraft-2_1.109.113-lf.jar"
+      }
+    , { "name": "INVTweak"
+      , "version": "1.4.5"
+      , "url": "http://dl.dropbox.com/u/7592975/InvTweaks/InvTweaks-1.45-1.4.4.zip"
+      }
+    ]
+  , "coremods":
+    [ { "name": "NEI"
+      , "version": "1.4.2.7"
+      , "url": "http://www.chickenbones.craftsaddle.org/Files/goto.php?file=NotEnoughItems"
+      }
+    ]
+  }
+, "server":
+  { "mods":
+    [ { "name": "DynmapForge"
+      , "version": "1.2"
+      , "url": "http://goo.gl/4Q8gv"
+      }
+    ]
+  }
+, "client":
+  { "minecraft.jar": ""
+  , "mods":
+    [ { "name": "ReiMinimap"
+      , "version": "v3.2_05"
+      , "url": "http://adf.ly/go/fa0336c24217f43730f54dbada33815a/aHR0cDovL2RsLmRyb3Bib3guY29tL3UvMzQ3ODc0OTkvbWluZWNyYWZ0LzEuNC41LyU1QjEuNC41JTVEUmVpTWluaW1hcF92My4yXzA1LnppcA"
+      }
+    ]
+  }
+}
