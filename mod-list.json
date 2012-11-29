@@ -1,6 +1,12 @@
 { "version": "1.4.5"
 , "common":
-  { "mods":
+  { "minecraft.jar" :
+    [ { "name": "FML"
+      , "version": "1.4.5"
+      , "url" : "http://dl.dropbox.com/u/20629262/Latest/ModLoader.zip"
+      }
+    ]
+  , "mods":
     [ { "name": "BuildCraft"
       , "version": "3.2.0"
       , "url": "http://bit.ly/Q8KM9d"
@@ -33,16 +39,9 @@
       , "version": "2_1.109.113"
       , "url": "http://dl.dropbox.com/u/861751/IC2/1.109/industrialcraft-2_1.109.113-lf.jar"
       }
-    , { "name": "INVTweak"
-      , "version": "1.4.5"
-      , "url": "http://dl.dropbox.com/u/7592975/InvTweaks/InvTweaks-1.45-1.4.4.zip"
-      }
     ]
   , "coremods":
-    [ { "name": "NEI"
-      , "version": "1.4.2.7"
-      , "url": "http://www.chickenbones.craftsaddle.org/Files/goto.php?file=NotEnoughItems"
-      }
+    [
     ]
   }
 , "server":
@@ -54,11 +53,30 @@
     ]
   }
 , "client":
-  { "minecraft.jar": ""
+  { "minecraft.jar":
+    [ { "name": "OptiFine"
+      , "version": "1.4.5"
+      , "url": "http://optifine.net/download.php?f=OptiFine_1.4.5_HD_U_D3.zip"
+      } 
+    ]
   , "mods":
     [ { "name": "ReiMinimap"
       , "version": "v3.2_05"
       , "url": "http://adf.ly/go/fa0336c24217f43730f54dbada33815a/aHR0cDovL2RsLmRyb3Bib3guY29tL3UvMzQ3ODc0OTkvbWluZWNyYWZ0LzEuNC41LyU1QjEuNC41JTVEUmVpTWluaW1hcF92My4yXzA1LnppcA"
+      }
+    , { "name": "INVTweak"
+      , "version": "1.4.5"
+      , "url": "http://dl.dropbox.com/u/7592975/InvTweaks/InvTweaks-1.45-1.4.4.zip"
+      }
+    ]
+  , "coremods":
+    [ { "name": "NEI"
+      , "version": "1.4.2.7"
+      , "url": "http://www.chickenbones.craftsaddle.org/Files/goto.php?file=NotEnoughItems"
+      }
+    , { "name": "ChickenCore"
+      , "version": "1.4.5"
+      , "url": "http://www.chickenbones.craftsaddle.org/Files/goto.php?file=CodeChickenCore"
       }
     ]
   }
